@@ -1,8 +1,10 @@
 # google-oauth2-test
 
+認証して、ドキュメントファイルの作成まで。
+
 .env.local
 
 ```
-NEXT_PUBLIC_CLIENT_ID=
-NEXT_PUBLIC_CLIENT_SECRET=
+CLIENT_ID=
+CLIENT_SECRET=
 ```
