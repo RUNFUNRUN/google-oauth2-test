@@ -10,7 +10,7 @@ export async function GET() {
 
   const authorizeUrl = oauth2Client.generateAuthUrl({
     access_type: "offline",
-    scope: "https://www.googleapis.com/auth/drive",
+    scope: (process.env.SCOPE || "").toString(),
   });
 
   return NextResponse.json({ authorizeUrl }, { status: 200 });
