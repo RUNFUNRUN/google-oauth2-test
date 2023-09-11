@@ -22,7 +22,7 @@ export default function Home() {
       const { tokens } = res.data;
       setTokensState(tokens);
     })();
-  }, [searchParams.get("code")]);
+  }, [searchParams]);
 
   const handleCreateFile = async () => {
     try {
